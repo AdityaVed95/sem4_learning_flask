@@ -1,0 +1,34 @@
+in this phase we do the testing of the action tag of the form in the
+html document 
+
+action tag determines that of which @app.route will the post fxn get
+called 
+
+so on submitting the form : 
+post will be done by the browser 
+that post request will go to the server
+but which @app.route should actually accept that post request ?
+
+that is determined using the action tag
+
+note : 
+diff btw redirect and render template : 
+
+render template will render the template from the templates folder only 
+but in case we want to redirect to another website then we shall use
+redirect fxn 
+
+
+so in case we dont mention the action tag in the form of the html then :
+
+the form will be posted at the @app.route of the same url
+
+thus the if block will be called of the same @app.route
+
+
+Note :
+
+avoid using render template in case you want the user to redirect to another page: 
+
+
+
